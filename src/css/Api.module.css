@@ -46,7 +46,7 @@ body {
 }
 
 .quote {
-  font-size: 20px;
+  font-size: 30px;
   color: #444;
   margin-bottom: 10px;
   transition: opacity 0.3s ease;
@@ -66,7 +66,8 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #2ebf91;
-  color: white;
+  color: black;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -80,11 +81,27 @@ body {
 
 .category {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #666;
   font-weight: bold;
 }
+.restart {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f25c54;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
+.restart:hover {
+  background-color: #d94c45;
+}
 
 @keyframes spin {
   0% {

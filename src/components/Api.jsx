@@ -5,9 +5,10 @@ const Api = () => {
   const [info, setinfo] = useState();
   const [error, setError] = useState(false);
   const [loader, setLoader] = useState(false);
+  const [restart, setRestart] = useState(false);
   const getQuote = () => {
     const url = "https://api.api-ninjas.com/v1/quotes";
-    setLoader(true); // Show loader when fetching starts
+    setLoader(true);
     setError(false);
     axios
       .get(url, {
@@ -28,6 +29,10 @@ const Api = () => {
         setLoader(false);
         console.log(error);
       });
+  };
+  const restartBtn = () => {
+    setRestart(true);
+    window.location.reload();
   };
   return (
     <>
@@ -71,6 +76,28 @@ const Api = () => {
             "Next"
           ) : (
             "Get Quote"
+          )}
+        </button>
+
+        <button
+          onClick={restartBtn}
+          className={style.restart}
+          disabled={loader}
+          style={{
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}>
+          {restart ? (
+            <div
+              className="spinner-border text-light"
+              role="status"
+              style={{ width: "1.5rem", height: "1.5rem" }}>
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          ) : (
+            "Restart"
           )}
         </button>
       </div>
