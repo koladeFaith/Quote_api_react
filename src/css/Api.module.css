@@ -30,10 +30,13 @@ body {
 
 .quoteHeading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   color: #333;
   font-size: 2.8rem;
-  text-shadow: 0px 0px 5px red;
+  text-shadow:
+    2px 2px 8px #ff0000,
+    0 0 10px #ff4d4d,
+    0 0 2px #ff0000;
 }
 
 .quotebox {
@@ -43,7 +46,7 @@ body {
 }
 
 .quote {
-  font-size: 1.3rem;
+  font-size: 20px;
   color: #444;
   margin-bottom: 10px;
   transition: opacity 0.3s ease;
@@ -51,7 +54,7 @@ body {
 
 .author {
   font-style: italic;
-  color: #666;
+  color: brown;
   transition: opacity 0.3s ease;
 }
 
@@ -74,16 +77,14 @@ body {
   background-color: #249b77;
 }
 
-.loader {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #2ebf91;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 15px;
-  animation: spin 1s linear infinite;
-  display: none;
+
+.category {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+  font-weight: bold;
 }
+
 
 @keyframes spin {
   0% {
