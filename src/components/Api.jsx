@@ -100,6 +100,7 @@ const Api = () => {
             "Restart"
           )}
         </button>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non facere quisquam odio sed iusto voluptas, deleniti reiciendis at ut dolores molestiae quos doloremque fuga vero rerum cumque beatae aut accusamus?
       </div>
     </>
   );
